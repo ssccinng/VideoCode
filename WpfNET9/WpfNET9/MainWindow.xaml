@@ -1,0 +1,32 @@
+﻿<Window x:Class="WpfNET9.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfNET9"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <Button Content="Standard WPF button" />
+            <Button Style="{DynamicResource DefaultAccentButtonStyle}" Content="WPF Accent Button" />
+            <Slider
+      Width="200"
+      Margin="0"
+      HorizontalAlignment="Left"
+      VerticalAlignment="Center"
+      AutomationProperties.Name="Simple"
+      IsSnapToTickEnabled="True"
+      Maximum="100"
+      Minimum="0"
+       />
+
+            <TextBlock Text="Hello, World!" />
+            <TextBox Text="Hello, World!" />
+            <Calendar/>
+            <DatePicker/>
+            <ProgressBar IsIndeterminate="True" />
+        </StackPanel>
+  
+    </Grid>
+</Window>
