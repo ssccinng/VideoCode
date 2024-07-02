@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35017.193
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EF8Array", "EF8Array\EF8Array.csproj", "{65341F33-AA51-4709-A40E-FF1BADF8CC2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EF7Array", "EF7Array\EF7Array.csproj", "{0ED8B8A2-64C7-47AC-A040-1C1FC49FC61D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{65341F33-AA51-4709-A40E-FF1BADF8CC2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65341F33-AA51-4709-A40E-FF1BADF8CC2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65341F33-AA51-4709-A40E-FF1BADF8CC2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65341F33-AA51-4709-A40E-FF1BADF8CC2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0ED8B8A2-64C7-47AC-A040-1C1FC49FC61D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0ED8B8A2-64C7-47AC-A040-1C1FC49FC61D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0ED8B8A2-64C7-47AC-A040-1C1FC49FC61D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0ED8B8A2-64C7-47AC-A040-1C1FC49FC61D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {503F5E30-F982-49FF-81FA-30EFE679A5B5}
+	EndGlobalSection
+EndGlobal
