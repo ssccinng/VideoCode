@@ -45,7 +45,7 @@ public class MyContext : DbContext
     }
 
 }
-
+[ComplexType]
 public class Blog
 {
     public int BlogId { get; set; }

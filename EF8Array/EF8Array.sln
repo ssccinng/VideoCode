@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EF8Array", "EF8Array\EF8Arr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EF7Array", "EF7Array\EF7Array.csproj", "{0ED8B8A2-64C7-47AC-A040-1C1FC49FC61D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EF8Complex", "EF8Complex\EF8Complex.csproj", "{887905FB-14E3-4806-B1A4-252BD5318E2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFTest", "EFTest\EFTest.csproj", "{622CA347-DCC5-44A6-BE2C-B94F887F35D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{0ED8B8A2-64C7-47AC-A040-1C1FC49FC61D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0ED8B8A2-64C7-47AC-A040-1C1FC49FC61D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0ED8B8A2-64C7-47AC-A040-1C1FC49FC61D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{887905FB-14E3-4806-B1A4-252BD5318E2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{887905FB-14E3-4806-B1A4-252BD5318E2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{887905FB-14E3-4806-B1A4-252BD5318E2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{887905FB-14E3-4806-B1A4-252BD5318E2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{622CA347-DCC5-44A6-BE2C-B94F887F35D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{622CA347-DCC5-44A6-BE2C-B94F887F35D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{622CA347-DCC5-44A6-BE2C-B94F887F35D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{622CA347-DCC5-44A6-BE2C-B94F887F35D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
