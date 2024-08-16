@@ -1,5 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Running;
 
 BenchmarkRunner.Run<TestEmpty>();
@@ -8,17 +7,11 @@ BenchmarkRunner.Run<TestEmpty>();
 [SimpleJob]
 public class TestEmpty
 {
-    //[Benchmark]
-    //public byte[] GetBytes() => [];
-    //[Benchmark]
-    //public byte[] GetBytes1() => Array.Empty<byte>();
-    //[Benchmark]
-    //public byte[] GetBytes2() => new byte[0];
-
-
     [Benchmark]
-    public List<byte> GetBytes() => [];
-
+    public byte[] GetBytes() => [];
     [Benchmark]
-    public List<byte> GetBytes2() => new List<byte>();
+    public byte[] GetBytes1() => Array.Empty<byte>();
+    [Benchmark]
+    public byte[] GetBytes2() => new byte[0];
+
 }
