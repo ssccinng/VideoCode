@@ -9,6 +9,8 @@ MyContext context = new MyContext();
 
 context.Database.EnsureCreated();
 
+var cc = context.Pokemons.Select(p => new { p.Def}).ToList();
+
 // insert 1000 rows 
 // for (int i = 0; i < 1000; i++)
 // {
@@ -35,7 +37,7 @@ context.Database.EnsureCreated();
 
 // context.SaveChanges();
 
- context.Set<Pokemon>().ExecuteUpdate(s => s.SetProperty(x => x.Def, s => Math.Sqrt(s.Def)));
+//  context.Set<Pokemon>().ExecuteUpdate(s => s.SetProperty(x => x.Def, s => Math.Sqrt(s.Def)));
 
 
 

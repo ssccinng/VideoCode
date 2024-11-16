@@ -1,0 +1,9 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+	<ItemGroup>
+		<Analyzer Include="../MyAnalyzer/bin/Debug/netstandard2.0/MyAnalyzer.dll"/>
+	</ItemGroup>
+</Project>

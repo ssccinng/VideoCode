@@ -54,16 +54,19 @@ async Task ProcessClient(Socket socket)
 
 bool TryReadline(ref ReadOnlySequence<byte> buffer, out ReadOnlySequence<byte> line)
 {
-    var position = buffer.PositionOf((byte)'#');
 
-    if (position == null)
+    //var position = buffer.PositionOf((byte)'#');
+
+    var reader = new SequenceReader<byte>(buffer);
+
+    if (!reader.TryReadTo(out line, "()"u8))
     {
         line = default;
         return false;
     }
 
-    line = buffer.Slice(0, position.Value);
-    buffer = buffer.Slice(buffer.GetPosition(1, position.Value));
+    //line = buffer.Slice(0, position.Value);
+    buffer = buffer.Slice(reader.Position);
 
     return true;
 }
