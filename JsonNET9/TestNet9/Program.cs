@@ -4,17 +4,17 @@ using System.Runtime.CompilerServices;
 using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Jobs;
 using BenchmarkDotNet.Running;
-Test.TestParams(1, 2, 3);
-object lockObjo = new object();
-lock (lockObjo)
-{
-}
-
-Lock lockObj = new Lock();
-lock (lockObj)
-{
-}
-return;
+// Test.TestParams(1, 2, 3);
+// object lockObjo = new object();
+// lock (lockObjo)
+// {
+// }
+//
+// Lock lockObj = new Lock();
+// lock (lockObj)
+// {
+// }
+// return;
 string song = """
               Here I am, staring at my own palms，
               I feel the warmth of your hand，
@@ -45,16 +45,22 @@ string song = """
 
 var ag = song
     .Split(' ', StringSplitOptions.RemoveEmptyEntries).CountBy(s => s)
-    .OrderByDescending(s => s.Value);
-// .AggregateBy( s=> s, new List<string>(), (total, item) => [.. total, item] );
-
+    .OrderByDescending(s => s.Value)
+ .AggregateBy(s => s.Value,  _ => new List<string>(), 
+        (total, item) =>
+        {
+             total.Add(item.Key);
+             return total;
+        });
 
 
 
 foreach (var s in ag)
 {
-    Console.WriteLine(s);
+    Console.WriteLine(s.Key);
+    Console.WriteLine(string.Join(", ", s.Value));
 }
+return;
 
 (string, int)[] peoms =
 [
